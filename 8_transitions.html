@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transitions</title>
+    <style>
+      body {
+        background: #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .box {
+        background: red;
+        width: 100px;
+        height: 100px;
+        transition-property: background;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+        /* transition-delay: 1s; */
+        transition: background 2s ease-in-out;
+      }
+      .box2 {
+        background: white;
+        width: 100px;
+        height: 100px;
+        transition: background 2s ease-in-out;
+      }
+      .box3 {
+        background: orange;
+        width: 100px;
+        height: 100px;
+        transition: all 2s ease-in-out;
+      }
+
+      .box:hover {
+        background: white;
+        border-radius: 50%;
+      }
+      .box2:hover {
+        background: rebeccapurple;
+      }
+      .box3:hover {
+        background: yellow;
+        height: 300px;
+        width: 30px;
+      }
+
+      /* Transitional Properties - have identafiable 1/2 point
+
+      background-color
+      background-position
+      border-color
+      border-width
+      border-spacing
+      bottom
+      color
+      font-size
+      font-weight
+      -height-left
+      letter-spacing
+      line-height
+      margin
+      max-height
+      max-width
+      min-height
+      min-width
+      opacity
+      outline-color
+      outline-offset
+      outline-width
+      padding right
+      text-indent
+      text-shadow
+      top
+      vertical-align
+      visibility
+      width
+      word-spacing
+      z-index
+      */
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+  </body>
+</html>

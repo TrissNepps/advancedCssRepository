@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before and After</title>
+    <style>
+      .is-required:after {
+        content: "*";
+        color: rebeccapurple;
+        padding-left: 2px;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #333;
+        color: #fff;
+        margin: 0;
+      }
+
+      header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+
+        background: url(https://source.unsplash.com/daily) no-repeat center
+          center/cover;
+        opacity: 0.8;
+      }
+
+      header:before {
+        content: "";
+        background: url(https://source.unsplash.com/daily) no-repeat center
+          center/cover;
+        opacity;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+
+      header > h1 {
+        font-size: 4rem;
+        margin: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <label for="name" class="is-required">Name</label>
+    <input type="text" /> -->
+    <header>
+      <h1>Hello Peeps</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt,
+        impedit.
+      </p>
+    </header>
+    <section>
+      <h3>Lorem, ipsum dolor.</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ab eum
+        aliquam voluptatibus beatae, fugiat voluptas aperiam necessitatibus eius
+        ut optio omnis quam neque rem repudiandae natus ipsum minima impedit!
+      </p>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadows</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .box {
+        padding: 1rem;
+        margin: 1rem;
+        background: rebeccapurple;
+        color: #fff;
+        /* offset-x | offset-y | color*/
+        box-shadow: -1rem 0.4rem teal;
+      }
+      .box1 {
+        padding: 1rem;
+        margin: 1rem;
+        background: coral;
+        color: #fff;
+        /* offset-x | offset-y | blur-radius | color*/
+        box-shadow: 1rem -0.5rem 20px teal;
+      }
+      .box2 {
+        padding: 1rem;
+        margin: 1rem;
+        background: grey;
+        color: #fff;
+        /* offset-x | offset-y | blur-radius | spread-radius | color*/
+        box-shadow: 10px 12px 10px 2px rgba(0, 0, 0, 0.5);
+      }
+      .box3 {
+        padding: 1rem;
+        margin: 1rem;
+        background: brown;
+        color: #fff;
+        /* inset | offset-x | offset-y | color*/
+        box-shadow: inset -15px -3px teal;
+      }
+      .box3 {
+        padding: 1rem;
+        margin: 1rem;
+        background: brown;
+        color: #fff;
+        /* inset | offset-x | offset-y | color*/
+        box-shadow: inset -15px -3px teal;
+      }
+      .box4 {
+        padding: 1rem;
+        margin: 1rem;
+        background: magenta;
+        color: #fff;
+        /* Multiple shadows -- can also add blur radius after the y-offset*/
+        box-shadow: 13px 13px teal, -13px -13px olive;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore libero
+          culpa tempore nobis. Iusto natus sapiente deserunt quam
+          necessitatibus!
+        </p>
+      </div>
+      <div class="box1">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore libero
+          culpa tempore nobis. Iusto natus sapiente deserunt quam
+          necessitatibus!
+        </p>
+      </div>
+      <div class="box2">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore libero
+          culpa tempore nobis. Iusto natus sapiente deserunt quam
+          necessitatibus!
+        </p>
+      </div>
+      <div class="box3">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore libero
+          culpa tempore nobis. Iusto natus sapiente deserunt quam
+          necessitatibus!
+        </p>
+      </div>
+      <div class="box4">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore libero
+          culpa tempore nobis. Iusto natus sapiente deserunt quam
+          necessitatibus!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
